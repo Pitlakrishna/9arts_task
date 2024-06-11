@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 35px;
+    color: #000;
+}
+
+.button-search,
+.button-in-touch {
+    padding: 8px 15px;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 150px;
+    margin: 0px !important;
+}
+
+.button-search {
+    background-image: linear-gradient(to right, #FF9574, #FF3AA6);
+}
+
+.button-in-touch {
+    border: 1px solid #FF3AA6;
+    background-color: #fff;
+    color: #000000 !important;
+}

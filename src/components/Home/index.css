@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-background-container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.animation-chart-bg-container {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16252e;
+
+}

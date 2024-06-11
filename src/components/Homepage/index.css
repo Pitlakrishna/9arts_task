@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* barchat */
+
+.animation-chart-bg-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16252e;
+
+}
+
+.boxContainer {
+    background-color: #16252E;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 3px solid red; */
+}
+
+.pink-gradient {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    opacity: 0.8;
+    /* border: 2px solid red; */
+}
+
+.pink-gradient>img {
+    position: absolute;
+    top: -100px;
+    /* overflow: hidden; */
+}
+
+
+.orange-gradient {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    right: 0;
+    opacity: 0.8;
+}
+
+.orange-gradient>img {
+    position: relative;
+    right: -438px;
+    top: 230px;
+    height: 500px;
+}
+
+/* .orange-gradient    ::after {
+    background-color: red;
+    z-index: 99;
+    border: 3px solid red;
+} */
+
+.box_header h1 {
+    margin: 13px 0px;
+}
+
+.button {
+    margin-top: -330px;
+}
+
+.heading-gradient {
+    background-image: linear-gradient(to right, #FF1EAB, #ED9B42);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.button-classes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    transform: translateY(-330px);
+}
+
+.a {
+    animation: textAnimation 0.2s ease-in backwards;
+    animation-delay: calc(.7s*var(--i));
+    margin-right: 10px;
+}
+
+
+.button-classes button {
+    padding: 5px 7px;
+    border: 2px dashed #d4cec2;
+    background-color: transparent;
+    color: #fff;
+    border-spacing: 10px;
+    border-radius: 5px;
+    margin: 5px 30px;
+    transition: transform 0.5s linear;
+}
+
+.button-classes button:hover {
+    transform: scale(1.1);
+}
+
+.person-img {
+    height: 318px;
+    transform: translateX(-25px) translateY(5px);
+}
+
+.hrline {
+    width: 450px;
+    height: 3px;
+    transform: translateY(-16px);
+    background-image: linear-gradient(90deg, #16252E 0%, #d5d9dc 49.4%, #16252E 100%);
+
+}
+
+.box_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../images/circle.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    animation: scrollBox 2s ease-in-out 2s 1 normal;
+}
+
+
+
+
+.left_box,
+.right_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.image4 {
+    transform: translateY(-100px) translateX(80px);
+    width: 30px !important;
+}
+
+.cup_image {
+    width: 130px !important;
+    position: relative;
+    left: 170px;
+    top: 30px;
+}
+
+.circleMini_image {
+    width: 26px !important;
+}
+
+.image3 {
+    transform: translateX(250px) translateY(90px);
+    width: 40px !important;
+}
+
+.left_box .cup_image,
+.right_box .thunder_image {
+    width: 150px;
+    height: 200px;
+}
+
+.vector3 {
+    position: relative;
+    width: 20px !important;
+    top: -100px;
+}
+
+.image2 {
+    position: relative;
+    left: -250px;
+    width: 35px !important;
+}
+
+.thunder_image {
+    width: 130px !important;
+    position: relative;
+    right: 90px;
+}
+
+.image5 {
+    align-self: center;
+    transform: translateY(70px);
+}
+
+
+
+.left_box img,
+.right_box img {
+    width: 30px;
+    height: 30px;
+}
+
+.thunder_image {
+    animation: animation 2s ease-in-out 2s infinite normal;
+    transition: all 3s linear;
+}
+
+.cup_image {
+    animation: animationCup 3s ease-in-out 2s infinite normal;
+    transition: all 3s linear;
+}
+
+.bulb_image {
+    animation: animationCup 2s ease-in-out 3s infinite normal;
+    transition: all 4s linear;
+}
+
+@keyframes animation {
+
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes animationCup {
+
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.3, 1.3, 1.3);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+
+}
+
+@keyframes textAnimation {
+    0% {
+
+        opacity: 0;
+        /* transform: translateY(-150px) !important; */
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        /* transform: translateY(0px) !important; */
+        transform: translateY(0);
+    }
+
+}
